@@ -1,3 +1,18 @@
+@import './src/colors';
+
 .product-container{
-    max-width: 33%;
+    display: block;
+    max-height: 15rem;
+    margin: 15px 0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 2px lighten($experian, 60%);
+    font-size: 1rem;
+    color: $black;
+    overflow: hidden;
+    transition: all linear 0.1s;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
