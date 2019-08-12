@@ -9,10 +9,10 @@ import { from } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'experiantest';
-  products: any[] = [];
+  products: any;
 
   constructor(protected httpService: HttpService) { }
   ngOnInit() {
-    this.httpService.getProducts().subscribe(data => { this.products = data['results'] }, error => { console.error(error) })
+    this.httpService.getProducts().subscribe(data => { this.products = data }, error => { console.error(error) })
   }
 }
